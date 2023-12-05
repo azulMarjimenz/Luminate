@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Faculty Project Information</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            text-align: center;
+            width: 100%;
+            position: relative;
+        }
+
+        .header-bg {
+            background-color: #00244E;
+            padding: 40px 0;
+            position: relative;
+        }
+
+        .header-text {
+            color: white;
+            z-index: 2;
+            position: relative;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 20px; 
+        }
+
+        footer {
+            background-color: #FF7900;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+
+        a { 
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-bg">
+            <div class="header-text">California State University,Fullerton</div> 
+            <a herf="">Home</a>
+            <a herf="">About Us</a>
+            <a herf="">Contact US</a>
+        </div>
+        <div class="header-content">
+            <img src="csuf_logo.png" alt="CSUF Logo" width="100" height="100">
+            <h1 class="Luminate Project">Luminate Project</h1>
+        </div>
+    </header>
+    <form action="index2b-u.php" method="post">
+        <label for="namee">Name:</label>
+        <input type="text" id="namee" name="namee" required><br><br>
+        
+        <label for="class">Class:</label>
+        <input type="text" id="class" name="class" required><br><br>
+        
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" required><br><br>
+        
+        <label for="course">Course & Section:</label>
+        <input type="text" id="course" name="course" required><br><br>
+        
+        <label for="semester">Semester:</label>
+        <input type="text" id="semester" name="semester" required><br><br>
+        
+        <label for="irb_training">Completed IRB Training:</label><br>
+        <input type="radio" id="irb_yes" name="irb_training" value="yes"> Yes
+        <input type="radio" id="irb_no" name="irb_training" value="no"> No<br><br>
+        
+        <div id="version_label" style="display: none;">
+            <label for="versions">Select Training Version:</label>
+            <select id="versions" name="version_label">
+                <option value="none" name="none">None</option>
+                <option value="Version 1" name="Version 1">Version 1</option>
+                <option value="Version 2" name="Version 2">Version 2</option>
+                <option value="Version 3" name="Version 3">Version 3</option>
+                <option value="Other" name="Other">Other</option>
+            </select><br><br>
+        </div>
+
+        <button type="submit" name="save">Submit</button>
+    </form>
+    <br>
+    <a href="/download">Download Python Script</a>
+
+    <div class="color-block"></div>
+
+    <footer>  
+        <hr> 
+        &copy; Copyright reserved<br>
+        <small><a href="mailto:California State University, Fullerton.">California State University, Fullerton</a></small>
+    </footer> 
+</body>
+</html>
